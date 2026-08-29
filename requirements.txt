@@ -1,6 +1,6 @@
 streamlit
 pandas
 numpy<2.2
-scikit-learn==1.5.2
+scikit-learn==1.6.1
 pyarrow
 numexpr>=2.10.2
