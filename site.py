@@ -4,9 +4,13 @@ import joblib
 
 @st.cache_resource
 def load_model():
-    model = joblib.load('model_gb.pkl')
-    return model
-
+    try:
+        model = joblib.load('model_gb.pkl')
+        return model
+    except Exception as e:
+        st.error(f"Ошибка загрузки модели: {e}")
+        return None
+    
 model = load_model()
 
 st.set_page_config(
