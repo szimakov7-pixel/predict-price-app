@@ -90,8 +90,8 @@ if st.button("🚀 Рассчитать стоимость", type="primary"):
         input_data = pd.DataFrame([{
             'total_area': total_area,
             'living_area': living_area,
-            'rooms': rooms,
             'kitchen_area': kitchen_area,
+            'rooms': rooms,
             'floor': floor,
             'total_floors': total_floors,
             'wall_type': wall_type,
