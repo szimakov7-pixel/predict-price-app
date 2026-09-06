@@ -36,14 +36,15 @@ with col1:
         "Жилая площадь (м²)", 
         min_value=10.0, max_value=100.0, value=30.0, step=1.0
     )
+    kitchen_area = st.number_input(
+            "Площадь кухни (м²)", 
+            min_value=4.0, max_value=30.0, value=10.0, step=1.0
+    )
     rooms = st.number_input(
             "Количество комнат", 
             min_value=1, max_value=4, value=2, step=1
     )
-    kitchen_area = st.number_input(
-        "Площадь кухни (м²)", 
-        min_value=4.0, max_value=30.0, value=10.0, step=1.0
-    )
+    
     
 with col2:
     floor = st.number_input(
