@@ -103,7 +103,7 @@ if st.button("🚀 Рассчитать стоимость", type="primary"):
 
         try:
             prediction = model.predict(input_data)[0]
-            mae = 3.21  
+            mae = 3.292  
             
             st.markdown("---")
             st.subheader("📊 Результат прогноза")
